@@ -16,6 +16,18 @@ Most of my work lives in private production repos. The case studies below docume
 | [heartbeat-watchdog](https://github.com/artinbahmani/heartbeat-watchdog) | Wrap any script or cron job with heartbeat monitoring and Telegram failure alerts. |
 | [rss-telegram-watcher](https://github.com/artinbahmani/rss-telegram-watcher) | Polls RSS feeds with jitter, dedupes, and pushes new items to Telegram. |
 
+## Live apps
+
+Data-driven single-page apps, each running on GitHub Pages with no server and no API keys. Real-estate and market tools built on official and public data.
+
+| App | Try it | What it is |
+|---|---|---|
+| [dubai-transactions-map](https://github.com/artinbahmani/dubai-transactions-map) | [open](https://artinbahmani.github.io/dubai-transactions-map/) | Interactive map of Dubai property transactions from official Land Department open data. Color-coded communities, price per sqm, click any area for full stats. |
+| [chart-studio](https://github.com/artinbahmani/chart-studio) | [open](https://artinbahmani.github.io/chart-studio/) | Browser-only trading chart studio: six exchange datafeeds, dozens of indicators, pattern markers, bar replay, shareable state. |
+| [derivatives-radar](https://github.com/artinbahmani/derivatives-radar) | [open](https://artinbahmani.github.io/derivatives-radar/) | Keyless crypto derivatives terminal: funding APY across exchanges, open interest, long/short ratios, Fear and Greed history. |
+| [crypto-screener](https://github.com/artinbahmani/crypto-screener) | [open](https://artinbahmani.github.io/crypto-screener/) | Screener over every Binance pair with preset screens, composable conditions, sparklines and CSV export. |
+| [dubai-property-calculators](https://github.com/artinbahmani/dubai-property-calculators) | [open](https://artinbahmani.github.io/dubai-property-calculators/) | Four Dubai calculators in one page: true cost of ownership, off-plan payment-plan IRR, rent vs buy, mortgage. |
+
 ## Playable demos
 
 Small self-contained builds, each a single HTML file with no dependencies and a live demo on GitHub Pages:
