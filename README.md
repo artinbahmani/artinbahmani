@@ -16,6 +16,17 @@ Most of my work lives in private production repos. The case studies below docume
 | [heartbeat-watchdog](https://github.com/artinbahmani/heartbeat-watchdog) | Wrap any script or cron job with heartbeat monitoring and Telegram failure alerts. |
 | [rss-telegram-watcher](https://github.com/artinbahmani/rss-telegram-watcher) | Polls RSS feeds with jitter, dedupes, and pushes new items to Telegram. |
 
+## Playable demos
+
+Small self-contained builds, each a single HTML file with no dependencies and a live demo on GitHub Pages:
+
+| Demo | Try it | What it is |
+|---|---|---|
+| [tower-stack](https://github.com/artinbahmani/tower-stack) | [play](https://artinbahmani.github.io/tower-stack/) | Tower-stacking arcade game on a night skyline. Canvas, frame-rate independent. |
+| [minesweeper](https://github.com/artinbahmani/minesweeper) | [play](https://artinbahmani.github.io/minesweeper/) | The classic, dark UI, first click always safe, touch-friendly flags. |
+| [dubai-mortgage-calculator](https://github.com/artinbahmani/dubai-mortgage-calculator) | [open](https://artinbahmani.github.io/dubai-mortgage-calculator/) | Monthly payment plus every upfront fee of a Dubai purchase, visualized. |
+| [crypto-ticker](https://github.com/artinbahmani/crypto-ticker) | [open](https://artinbahmani.github.io/crypto-ticker/) | Live top-20 prices, 7-day sparklines with hover inspection, pinnable coins. |
+
 ## How I work
 
 I care about systems that keep running when nobody is watching. That means idempotent pipelines, dedup at every ingestion point, heartbeat monitors on every long-running process, alerting that reaches my phone, and backups that get restore-tested instead of just written to disk.
