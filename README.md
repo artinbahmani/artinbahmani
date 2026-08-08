@@ -28,16 +28,35 @@ Data-driven single-page apps, each running on GitHub Pages with no server and no
 | [crypto-screener](https://github.com/artinbahmani/crypto-screener) | [open](https://artinbahmani.github.io/crypto-screener/) | Screener over every Binance pair with preset screens, composable conditions, sparklines and CSV export. |
 | [dubai-property-calculators](https://github.com/artinbahmani/dubai-property-calculators) | [open](https://artinbahmani.github.io/dubai-property-calculators/) | Four Dubai calculators in one page: true cost of ownership, off-plan payment-plan IRR, rent vs buy, mortgage. |
 
-## Playable demos
+## Games
 
-Small self-contained builds, each a single HTML file with no dependencies and a live demo on GitHub Pages:
+Browser games built from scratch on canvas, no engines and no dependencies, each live on GitHub Pages:
 
-| Demo | Try it | What it is |
+| Game | Play | What it is |
 |---|---|---|
-| [tower-stack](https://github.com/artinbahmani/tower-stack) | [play](https://artinbahmani.github.io/tower-stack/) | Tower-stacking arcade game on a night skyline. Canvas, frame-rate independent. |
-| [minesweeper](https://github.com/artinbahmani/minesweeper) | [play](https://artinbahmani.github.io/minesweeper/) | The classic, dark UI, first click always safe, touch-friendly flags. |
-| [dubai-mortgage-calculator](https://github.com/artinbahmani/dubai-mortgage-calculator) | [open](https://artinbahmani.github.io/dubai-mortgage-calculator/) | Monthly payment plus every upfront fee of a Dubai purchase, visualized. |
-| [crypto-ticker](https://github.com/artinbahmani/crypto-ticker) | [open](https://artinbahmani.github.io/crypto-ticker/) | Live top-20 prices, 7-day sparklines with hover inspection, pinnable coins. |
+| [rts-skirmish](https://github.com/artinbahmani/rts-skirmish) | [play](https://artinbahmani.github.io/rts-skirmish/) | Real-time strategy skirmish: gather, build, upgrade, and destroy the enemy base against an AI. |
+| [tower-defense](https://github.com/artinbahmani/tower-defense) | [play](https://artinbahmani.github.io/tower-defense/) | Four upgradeable tower types, creep waves, economy and tech. |
+| [space-shooter](https://github.com/artinbahmani/space-shooter) | [play](https://artinbahmani.github.io/space-shooter/) | Top-down arcade shooter: endless waves, bosses, power-ups, particles. |
+| [merchant-tycoon](https://github.com/artinbahmani/merchant-tycoon) | [play](https://artinbahmani.github.io/merchant-tycoon/) | Idle shop-empire tycoon: managers, upgrades, prestige, offline earnings. |
+| [gem-crush](https://github.com/artinbahmani/gem-crush) | [play](https://artinbahmani.github.io/gem-crush/) | Match-3 with cascades, line-clears and color bombs. |
+| [brick-breaker](https://github.com/artinbahmani/brick-breaker) | [play](https://artinbahmani.github.io/brick-breaker/) | Breakout with brick types, power-ups and hand-designed levels. |
+| [sudoku](https://github.com/artinbahmani/sudoku) | [play](https://artinbahmani.github.io/sudoku/) | Real generator (unique-solution guaranteed), solver, notes, hints, four difficulties. |
+| [snake-arcade](https://github.com/artinbahmani/snake-arcade) | [play](https://artinbahmani.github.io/snake-arcade/) | Classic, Speed and Maze modes with obstacles and touch support. |
+| [tower-stack](https://github.com/artinbahmani/tower-stack) | [play](https://artinbahmani.github.io/tower-stack/) | Tower-stacking arcade game on a night skyline. |
+| [minesweeper](https://github.com/artinbahmani/minesweeper) | [play](https://artinbahmani.github.io/minesweeper/) | The classic, dark UI, first click always safe. |
+
+## Tools and utilities
+
+Single-page tools across a few fields, all client-side with data saved locally:
+
+| Tool | Open | What it is |
+|---|---|---|
+| [pos-storefront](https://github.com/artinbahmani/pos-storefront) | [open](https://artinbahmani.github.io/pos-storefront/) | Storefront plus point-of-sale demo: catalog, cart, VAT checkout, inventory admin. |
+| [invoice-generator](https://github.com/artinbahmani/invoice-generator) | [open](https://artinbahmani.github.io/invoice-generator/) | Live-preview invoices, print to PDF, saved invoices, JSON export. |
+| [expense-tracker](https://github.com/artinbahmani/expense-tracker) | [open](https://artinbahmani.github.io/expense-tracker/) | Transactions, budgets, and inline-SVG charts. |
+| [habit-tracker](https://github.com/artinbahmani/habit-tracker) | [open](https://artinbahmani.github.io/habit-tracker/) | Streaks, weekly and monthly views, a contribution heatmap. |
+| [dubai-mortgage-calculator](https://github.com/artinbahmani/dubai-mortgage-calculator) | [open](https://artinbahmani.github.io/dubai-mortgage-calculator/) | Monthly payment plus every upfront fee of a Dubai purchase. |
+| [crypto-ticker](https://github.com/artinbahmani/crypto-ticker) | [open](https://artinbahmani.github.io/crypto-ticker/) | Live top-20 prices with sparklines. |
 
 ## How I work
 
