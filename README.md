@@ -1,6 +1,8 @@
 # Artin Bahmani
 
-Systems builder based in Dubai. I design, build and operate production automation: lead pipelines, messaging infrastructure, market-data systems, and self-hosted platforms that real businesses run on every day.
+Independent systems architect in Dubai. Local LLMs and AI automation, lead pipelines, messaging infrastructure, market-data systems, self-hosted platforms.
+
+I design, build and operate production automation that real businesses run on every day. I run open-weight models locally on my own Apple Silicon production server (Ollama: Qwen3 14B, Llama 3.2 3B, nomic-embed-text embeddings, with RAG on PostgreSQL pgvector), and I use frontier LLM APIs (Anthropic Claude) in production.
 
 Most of my work lives in private production repos. The case studies below document the architecture, design decisions and selected code from systems that are live right now.
 
@@ -16,47 +18,36 @@ Most of my work lives in private production repos. The case studies below docume
 | [heartbeat-watchdog](https://github.com/artinbahmani/heartbeat-watchdog) | Wrap any script or cron job with heartbeat monitoring and Telegram failure alerts. |
 | [rss-telegram-watcher](https://github.com/artinbahmani/rss-telegram-watcher) | Polls RSS feeds with jitter, dedupes, and pushes new items to Telegram. |
 
-## Live apps
+### Messaging engine (private)
 
-Data-driven single-page apps, each running on GitHub Pages with no server and no API keys. Real-estate and market tools built on official and public data.
+A compliance-first business messaging engine built around one rule: no message is sent without a human approving it.
+
+- A human approval gate comes before any message is sent.
+- Per-sender daily caps with a warm-up ramp.
+- Randomized send timing with rest periods.
+- Sender health and eligibility checks before every batch.
+- Opt-out is honored immediately and permanently through a suppression list.
+- Replies are detected and routed to the right person.
+- Daily reporting to Telegram.
+- Messages are drafted by an LLM, then a human edits or approves them.
+
+**Result:** 35% reply rate.
+
+Source is private. Demo on request.
+
+## Featured live demos
+
+Limited demo versions of browser-only apps with no server and no API keys: real-estate and market tools built on official and public data, plus a game built from scratch on canvas. All demos in one place: [artinbahmani.artin-bahmani0.workers.dev](https://artinbahmani.artin-bahmani0.workers.dev/). Full versions on request.
 
 | App | Try it | What it is |
 |---|---|---|
-| [dubai-transactions-map](https://github.com/artinbahmani/dubai-transactions-map) | [open](https://artinbahmani.github.io/dubai-transactions-map/) | Interactive map of Dubai property transactions from official Land Department open data. Color-coded communities, price per sqm, click any area for full stats. |
-| [chart-studio](https://github.com/artinbahmani/chart-studio) | [open](https://artinbahmani.github.io/chart-studio/) | Browser-only trading chart studio: six exchange datafeeds, dozens of indicators, pattern markers, bar replay, shareable state. |
-| [derivatives-radar](https://github.com/artinbahmani/derivatives-radar) | [open](https://artinbahmani.github.io/derivatives-radar/) | Keyless crypto derivatives terminal: funding APY across exchanges, open interest, long/short ratios, Fear and Greed history. |
-| [crypto-screener](https://github.com/artinbahmani/crypto-screener) | [open](https://artinbahmani.github.io/crypto-screener/) | Screener over every Binance pair with preset screens, composable conditions, sparklines and CSV export. |
-| [dubai-property-calculators](https://github.com/artinbahmani/dubai-property-calculators) | [open](https://artinbahmani.github.io/dubai-property-calculators/) | Four Dubai calculators in one page: true cost of ownership, off-plan payment-plan IRR, rent vs buy, mortgage. |
+| [dubai-transactions-map](https://github.com/artinbahmani/dubai-transactions-map) | [open](https://artinbahmani.artin-bahmani0.workers.dev/dubai-transactions-map/) | Interactive map of Dubai property transactions from official Land Department open data. Color-coded communities, price per sqm, click any area for full stats. |
+| [chart-studio](https://github.com/artinbahmani/chart-studio) | [open](https://artinbahmani.artin-bahmani0.workers.dev/chart-studio/) | Browser-only trading chart studio: six exchange datafeeds, dozens of indicators, pattern markers, bar replay, shareable state. |
+| [derivatives-radar](https://github.com/artinbahmani/derivatives-radar) | [open](https://artinbahmani.artin-bahmani0.workers.dev/derivatives-radar/) | Keyless crypto derivatives terminal: funding APY across exchanges, open interest, long/short ratios, Fear and Greed history. |
+| [crypto-screener](https://github.com/artinbahmani/crypto-screener) | [open](https://artinbahmani.artin-bahmani0.workers.dev/crypto-screener/) | Screener over every Binance pair with preset screens, composable conditions, sparklines and CSV export. |
+| [rts-skirmish](https://github.com/artinbahmani/rts-skirmish) | [play](https://artinbahmani.artin-bahmani0.workers.dev/rts-skirmish/) | Real-time strategy skirmish: gather, build, upgrade, and destroy the enemy base against an AI. Canvas, no engine and no dependencies. |
 
-## Games
-
-Browser games built from scratch on canvas, no engines and no dependencies, each live on GitHub Pages:
-
-| Game | Play | What it is |
-|---|---|---|
-| [rts-skirmish](https://github.com/artinbahmani/rts-skirmish) | [play](https://artinbahmani.github.io/rts-skirmish/) | Real-time strategy skirmish: gather, build, upgrade, and destroy the enemy base against an AI. |
-| [tower-defense](https://github.com/artinbahmani/tower-defense) | [play](https://artinbahmani.github.io/tower-defense/) | Four upgradeable tower types, creep waves, economy and tech. |
-| [space-shooter](https://github.com/artinbahmani/space-shooter) | [play](https://artinbahmani.github.io/space-shooter/) | Top-down arcade shooter: endless waves, bosses, power-ups, particles. |
-| [merchant-tycoon](https://github.com/artinbahmani/merchant-tycoon) | [play](https://artinbahmani.github.io/merchant-tycoon/) | Idle shop-empire tycoon: managers, upgrades, prestige, offline earnings. |
-| [gem-crush](https://github.com/artinbahmani/gem-crush) | [play](https://artinbahmani.github.io/gem-crush/) | Match-3 with cascades, line-clears and color bombs. |
-| [brick-breaker](https://github.com/artinbahmani/brick-breaker) | [play](https://artinbahmani.github.io/brick-breaker/) | Breakout with brick types, power-ups and hand-designed levels. |
-| [sudoku](https://github.com/artinbahmani/sudoku) | [play](https://artinbahmani.github.io/sudoku/) | Real generator (unique-solution guaranteed), solver, notes, hints, four difficulties. |
-| [snake-arcade](https://github.com/artinbahmani/snake-arcade) | [play](https://artinbahmani.github.io/snake-arcade/) | Classic, Speed and Maze modes with obstacles and touch support. |
-| [tower-stack](https://github.com/artinbahmani/tower-stack) | [play](https://artinbahmani.github.io/tower-stack/) | Tower-stacking arcade game on a night skyline. |
-| [minesweeper](https://github.com/artinbahmani/minesweeper) | [play](https://artinbahmani.github.io/minesweeper/) | The classic, dark UI, first click always safe. |
-
-## Tools and utilities
-
-Single-page tools across a few fields, all client-side with data saved locally:
-
-| Tool | Open | What it is |
-|---|---|---|
-| [pos-storefront](https://github.com/artinbahmani/pos-storefront) | [open](https://artinbahmani.github.io/pos-storefront/) | Storefront plus point-of-sale demo: catalog, cart, VAT checkout, inventory admin. |
-| [invoice-generator](https://github.com/artinbahmani/invoice-generator) | [open](https://artinbahmani.github.io/invoice-generator/) | Live-preview invoices, print to PDF, saved invoices, JSON export. |
-| [expense-tracker](https://github.com/artinbahmani/expense-tracker) | [open](https://artinbahmani.github.io/expense-tracker/) | Transactions, budgets, and inline-SVG charts. |
-| [habit-tracker](https://github.com/artinbahmani/habit-tracker) | [open](https://artinbahmani.github.io/habit-tracker/) | Streaks, weekly and monthly views, a contribution heatmap. |
-| [dubai-mortgage-calculator](https://github.com/artinbahmani/dubai-mortgage-calculator) | [open](https://artinbahmani.github.io/dubai-mortgage-calculator/) | Monthly payment plus every upfront fee of a Dubai purchase. |
-| [crypto-ticker](https://github.com/artinbahmani/crypto-ticker) | [open](https://artinbahmani.github.io/crypto-ticker/) | Live top-20 prices with sparklines. |
+Also built: [Dubai Estate Suite](https://github.com/artinbahmani/dubai-estate-suite), [Dubai property calculators](https://github.com/artinbahmani/dubai-property-calculators), [a Dubai mortgage calculator](https://github.com/artinbahmani/dubai-mortgage-calculator), [a POS storefront](https://github.com/artinbahmani/pos-storefront), [an invoice generator](https://github.com/artinbahmani/invoice-generator), [an expense tracker](https://github.com/artinbahmani/expense-tracker), [a habit tracker](https://github.com/artinbahmani/habit-tracker) and [a crypto ticker](https://github.com/artinbahmani/crypto-ticker), plus canvas games ([tower defense](https://github.com/artinbahmani/tower-defense), [space shooter](https://github.com/artinbahmani/space-shooter), [merchant tycoon](https://github.com/artinbahmani/merchant-tycoon), [gem crush](https://github.com/artinbahmani/gem-crush), [brick breaker](https://github.com/artinbahmani/brick-breaker), [sudoku](https://github.com/artinbahmani/sudoku), [snake arcade](https://github.com/artinbahmani/snake-arcade), [tower stack](https://github.com/artinbahmani/tower-stack), [minesweeper](https://github.com/artinbahmani/minesweeper)).
 
 ## How I work
 
@@ -64,14 +55,19 @@ I care about systems that keep running when nobody is watching. That means idemp
 
 ## Stack
 
-**Languages:** Python, JavaScript / Node.js, SQL, Bash
-**Data:** PostgreSQL (TimescaleDB, pgvector), Redis, Airtable
-**Infra:** Docker Compose, Tailscale, Cloudflare, Uptime Kuma, self-hosted n8n
-**Integrations:** messaging APIs (WhatsApp, Telegram Bot API), exchange websockets (Bybit, Binance, Hyperliquid), LLM APIs in production
-**Web:** Webflow, no-code front-ends wired to custom backends
+- **Languages:** Python, JavaScript / Node.js, SQL, Bash
+- **AI:** Ollama with open-weight models (Qwen3 14B, Llama 3.2 3B), nomic-embed-text embeddings, RAG on PostgreSQL pgvector, frontier LLM APIs (Anthropic Claude) in production
+- **Data:** PostgreSQL (TimescaleDB, pgvector), Redis, Airtable
+- **Infra:** Docker Compose, Tailscale, Cloudflare, Uptime Kuma, self-hosted n8n
+- **Integrations:** messaging APIs (WhatsApp, Telegram), exchange websockets (Bybit, Binance, Hyperliquid)
+- **Web:** Webflow, no-code front-ends wired to custom backends
 
 ## Now
 
 Building a real-time trading intelligence platform: whale tracking on Hyperliquid, multi-timeframe market analysis, and a command-center dashboard, all running on my own local infrastructure.
 
-📍 Dubai, UAE · 📫 artin.bahmani0@gmail.com
+## Work with me
+
+The source code of my production systems is private. To use any of these systems or to get a full version, contact me at artin.bahmani0@gmail.com or on [LinkedIn](https://www.linkedin.com/in/artin-bahmani-6148b433b).
+
+📍 Dubai, UAE · 📫 artin.bahmani0@gmail.com · [LinkedIn](https://www.linkedin.com/in/artin-bahmani-6148b433b)
