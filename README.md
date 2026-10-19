@@ -10,7 +10,7 @@ Most of my work lives in private production repos. The case studies below docume
 |---|---|
 | [realestate-agent-portal](https://github.com/artinbahmani/realestate-agent-portal) | Operations platform for a Dubai real-estate brokerage. Real-time lead pipeline, campaign attribution, agent dashboards. |
 | [rtb-market-daemon](https://github.com/artinbahmani/rtb-market-daemon) | 24/7 crypto market-data daemon. Three exchanges, news ingestion, TimescaleDB, alerting. |
-| [whatsapp-campaign-engine](https://github.com/artinbahmani/whatsapp-campaign-engine) | Compliance-first WhatsApp outreach engine with human approval gates and ban-safety design. |
+| Messaging engine (private) | Compliance-first business messaging engine with a human approval gate before every send. 35% reply rate. Source is private. Demo on request. |
 | [selfhosted-ai-stack](https://github.com/artinbahmani/selfhosted-ai-stack) | Self-hosted production stack on Apple Silicon. Docker, Postgres, RAG, backups, monitoring. |
 | [pg-docker-backup](https://github.com/artinbahmani/pg-docker-backup) | Nightly backups for Postgres running in Docker, with rotation and restore verification. |
 | [heartbeat-watchdog](https://github.com/artinbahmani/heartbeat-watchdog) | Wrap any script or cron job with heartbeat monitoring and Telegram failure alerts. |
@@ -67,7 +67,7 @@ I care about systems that keep running when nobody is watching. That means idemp
 **Languages:** Python, JavaScript / Node.js, SQL, Bash
 **Data:** PostgreSQL (TimescaleDB, pgvector), Redis, Airtable
 **Infra:** Docker Compose, Tailscale, Cloudflare, Uptime Kuma, self-hosted n8n
-**Integrations:** Telegram Bot API, WhatsApp (Evolution API), exchange websockets (Bybit, Binance, Hyperliquid), LLM APIs in production
+**Integrations:** messaging APIs (WhatsApp, Telegram Bot API), exchange websockets (Bybit, Binance, Hyperliquid), LLM APIs in production
 **Web:** Webflow, no-code front-ends wired to custom backends
 
 ## Now
