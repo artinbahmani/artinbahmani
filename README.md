@@ -68,6 +68,6 @@ Building a real-time trading intelligence platform: whale tracking on Hyperliqui
 
 ## Work with me
 
-The source code of my production systems is private. To use any of these systems or to get a full version, contact me at artin.bahmani0@gmail.com or on [LinkedIn](https://www.linkedin.com/in/artin-bahmani-6148b433b).
+The source code of my production systems is private. To use any of these systems or to get a full version, contact me at artin.bahmani0@gmail.com or on [LinkedIn](https://www.linkedin.com/in/artinbahmani).
 
-📍 Dubai, UAE · 📫 artin.bahmani0@gmail.com · [LinkedIn](https://www.linkedin.com/in/artin-bahmani-6148b433b)
+📍 Dubai, UAE · 📫 artin.bahmani0@gmail.com · [LinkedIn](https://www.linkedin.com/in/artinbahmani)
